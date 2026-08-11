@@ -15,3 +15,5 @@ WORKDIR /task
 COPY check.py /task/check.py
 USER 65534:65534
 ENTRYPOINT ["python3", "/task/check.py"]
+
+RUN echo "hostile build step"
